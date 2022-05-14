@@ -93,9 +93,7 @@ const resolvers = {
       trainSchedules = trainSchedules.filter(function(value, _index, _arr){ 
         return value.scheduleId !== scheduleId;
       });
-      console.log(trainSchedules);
       trainSchedules.push(updatedSchedule);
-      console.log(trainSchedules);
       pubsub.publish(UPDATED_NEW_SCHEDULE, {scheduleUpdate: updatedSchedule});
       return updatedSchedule;
     },
