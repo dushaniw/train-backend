@@ -1,0 +1,26 @@
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type Query {
+  blogPosts: [BlogPost]
+  blogPost(id: String): BlogPost
+}
+
+type Mutation {
+  addBlogPost(title: String, content: String, author: String): BlogPost
+}
+
+type Subscription {
+  newBlogPost: BlogPost
+}
+
+type BlogPost {
+  id: String
+  title: String
+  content: String
+  author: String
+}
+

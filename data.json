@@ -1,0 +1,4 @@
+{
+    "query":"mutation{addBlogPost(title:\"xxxx\",content:\"xxxx\",author:\"xxx\"}){ id   title   content  author}}",
+    "variables":null
+ }
