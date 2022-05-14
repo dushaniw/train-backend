@@ -1,6 +1,6 @@
-# Star Wars example server
+# Train Schedule example server
 
-This is a really simple GraphQL server that uses [Apollo Server](https://github.com/apollostack/apollo-server) and [GraphQL Tools](https://github.com/apollostack/graphql-tools) to serve the Star Wars example schema from http://www.graphql.org.
+This is a really simple GraphQL server that uses [Apollo Server](https://github.com/apollostack/apollo-server) and [GraphQL Tools](https://github.com/apollostack/graphql-tools) to serve the Train Schedule example schema from https://apim.docs.wso2.com/en/4.0.0/tutorials/scenarios/scenario11-graphql/.
 
 ## Installation
 

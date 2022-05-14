@@ -5,22 +5,24 @@ schema {
 }
 
 type Query {
-  blogPosts: [BlogPost]
-  blogPost(id: String): BlogPost
-}
-
-type Mutation {
-  addBlogPost(title: String, content: String, author: String): BlogPost
+    schedules:[Schedule]
 }
 
 type Subscription {
-  newBlogPost: BlogPost
+    newSchedule(from: String) : Schedule!
+    scheduleUpdate(from: String) : Schedule!
 }
 
-type BlogPost {
-  id: String
-  title: String
-  content: String
-  author: String
+type Mutation {
+    addSchedule(from: String!, to: String!, trainType: String!, startTime: String!, endTime: String!) : Schedule!
+    updateSchedule(scheduleId: String!, startTime: String!, endTime: String!) : Schedule!
 }
 
+type Schedule {
+    scheduleId: String!
+    startTime: String
+    endTime: String
+    from: String
+    to: String
+    trainType: String
+}

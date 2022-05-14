@@ -1,1 +1,1 @@
-export { NewsAppSchema as default } from './newsSchema'
+export { TrainScheduleAppSchema as default } from './scheduleSchema'
